@@ -1,0 +1,10 @@
+PS C:\Users\arfan\Documents\Cognizant\DN5.0-JavaFSE-React-Deepskilling\Week_1\JUnit_Mockito_SLF4J> java -cp target/classes com.junit.test.stubbing.MockitoDemo
+=== Mockito Component Integration Demo ===
+Calling service.load():
+Result: Stubbed Data Response
+
+Calling service.persist('config', 'active'):
+Stubbed Update: config = active
+
+Calling service.lookup('user_1'):
+Result: Alice

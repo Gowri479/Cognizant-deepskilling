@@ -1,0 +1,10 @@
+=== Library Management System (Spring IoC & DI Demo) ===
+
+--- Testing Book Addition ---
+[BookService] Processing request to add book: 'Spring Boot in Action'
+[BookRepository] Persisting new book title: 'Spring Boot in Action'
+
+--- Fetching Library Catalog ---
+[BookService] Retrieving full book catalog from repository...
+[BookRepository] Fetching all records from database...
+Updated Library Catalog: [Clean Architecture, Refactoring, Head First Design Patterns, Spring Boot in Action]

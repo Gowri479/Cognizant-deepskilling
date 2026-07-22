@@ -1,0 +1,7 @@
+PS C:\Users\arfan\Documents\Cognizant\DN5.0-JavaFSE-React-Deepskilling\Week_1\JUnit_Mockito_SLF4J> java -cp target/classes com.junit.test.account.AccountDemo
+=== Customer Balance Demo ===
+Starting Balance: $1500.0
+Depositing $700...
+Balance after deposit: $2200.0
+Withdrawing $500...
+Balance after withdrawal: $1700.0
