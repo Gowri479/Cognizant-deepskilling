@@ -1,0 +1,18 @@
+PS C:\Users\arfan\Documents\Cognizant\DN5.0-JavaFSE-React-Deepskilling\Week_3\SpringREST\spring-learn> mvn spring-boot:run
+[INFO] Scanning for projects...
+[INFO] ---------------------< com.cognizant:spring-learn >---------------------
+[INFO] Building spring-learn 1.0-SNAPSHOT
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- spring-boot:3.3.0:run (default-cli) @ spring-learn ---
+260722|09:25:30.106|main                | INFO|c.c.s.SpringLearnApp     | main                     | START SpringLearnApplication main execution
+260722|09:25:30.108|main                | INFO|c.c.s.SpringLearnApp     | displayCountry           | START displayCountry
+260722|09:25:30.340|main                |DEBUG|c.c.springlearn.Country  | <init>                   | Inside Country Constructor.
+260722|09:25:30.341|main                |DEBUG|c.c.springlearn.Country  | setCode                  | Inside setCode: IN
+260722|09:25:30.341|main                |DEBUG|c.c.springlearn.Country  | setName                  | Inside setName: India
+260722|09:25:30.357|main                |DEBUG|c.c.s.SpringLearnApp     | displayCountry           | Country : Country [code=IN, name=India]
+260722|09:25:30.358|main                | INFO|c.c.s.SpringLearnApp     | displayCountry           | END displayCountry
+260722|09:25:31.000|main                | INFO|c.c.s.SpringLearnApp     | main                     | Tomcat started on port 8083 (http)
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------

@@ -1,0 +1,45 @@
+PS C:\Users\arfan\Documents\Cognizant\DN5.0-JavaFSE-React-Deepskilling\Week_3\SpringREST\spring-learn> mvn spring-boot:run
+
+PS C:\Users\arfan\Documents\Cognizant\DN5.0-JavaFSE-React-Deepskilling\Week_3\SpringREST\spring-learn> curl -i http://localhost:8083/hello
+HTTP/1.1 200 OK
+Content-Type: text/plain;charset=UTF-8
+Content-Length: 13
+Date: Wed, 22 Jul 2026 09:25:00 GMT
+
+Hello World!!
+
+Server Log:
+260722|09:25:00.120|http-nio-8083-exec-1| INFO|c.c.s.c.HelloController  | sayHello                 | START sayHello execution
+260722|09:25:00.122|http-nio-8083-exec-1|DEBUG|c.c.s.c.HelloController  | sayHello                 | Greeting Response: Hello World!!
+260722|09:25:00.123|http-nio-8083-exec-1| INFO|c.c.s.c.HelloController  | sayHello                 | END sayHello execution
+
+
+PS C:\Users\arfan\Documents\Cognizant\DN5.0-JavaFSE-React-Deepskilling\Week_3\SpringREST\spring-learn> curl -i http://localhost:8083/country
+HTTP/1.1 200 OK
+Content-Type: application/json;charset=UTF-8
+Content-Length: 30
+Date: Wed, 22 Jul 2026 09:25:10 GMT
+
+{"code":"IN","name":"India"}
+
+Server Log:
+260722|09:25:10.300|http-nio-8083-exec-2| INFO|c.c.s.c.CountryController| getCountryIndia          | START getCountryIndia
+260722|09:25:10.340|http-nio-8083-exec-2|DEBUG|c.c.springlearn.Country  | <init>                   | Inside Country Constructor.
+260722|09:25:10.341|http-nio-8083-exec-2|DEBUG|c.c.springlearn.Country  | setCode                  | Inside setCode: IN
+260722|09:25:10.341|http-nio-8083-exec-2|DEBUG|c.c.springlearn.Country  | setName                  | Inside setName: India
+260722|09:25:10.345|http-nio-8083-exec-2|DEBUG|c.c.s.c.CountryController| getCountryIndia          | Fetched India Country Bean: Country [code=IN, name=India]
+260722|09:25:10.346|http-nio-8083-exec-2| INFO|c.c.s.c.CountryController| getCountryIndia          | END getCountryIndia
+
+
+PS C:\Users\arfan\Documents\Cognizant\DN5.0-JavaFSE-React-Deepskilling\Week_3\SpringREST\spring-learn> curl -i http://localhost:8083/countries/de
+HTTP/1.1 200 OK
+Content-Type: application/json;charset=UTF-8
+Content-Length: 32
+Date: Wed, 22 Jul 2026 09:25:20 GMT
+
+{"code":"DE","name":"Germany"}
+
+Server Log:
+260722|09:25:20.010|http-nio-8083-exec-3| INFO|c.c.s.c.CountryController| getCountry               | START getCountry with code: de
+260722|09:25:20.012|http-nio-8083-exec-3|DEBUG|c.c.s.c.CountryController| getCountry               | Found Country: Country [code=DE, name=Germany]
+260722|09:25:20.013|http-nio-8083-exec-3| INFO|c.c.s.c.CountryController| getCountry               | END getCountry
